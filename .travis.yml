@@ -9,6 +9,8 @@ env:
   global:
     - PIPENV_VENV_IN_PROJECT=1
     - PIPENV_IGNORE_VIRTUALENVS=1
+    - GATOR_ENDPOINT=https://0lc46btkaf.execute-api.us-east-2.amazonaws.com/DEV/cli-test-sh
+    - GATOR_API_KEY=DbQlWPecHD4vLIeIveytUaKLb7Jy8UXE9KAUuYnW
 
 # install the Markdown linting program called mdl
 before_install:
