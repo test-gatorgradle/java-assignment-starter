@@ -2,6 +2,7 @@
 name: java-assignment-solution-100-01
 break: true
 indent: 4
+reflection: writing/reflection.md
 ---
 
 # GatorGrader configuration file from the following example repository:
