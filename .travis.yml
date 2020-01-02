@@ -54,6 +54,7 @@ before_script:
 script:
   # lint the assignment's documentation: see .mdlrc for modifications
   - git config --global user.email
+  - echo $TRAVIS_REPO_SLUG
   - mdl README.md
   # Java: see build.gradle for details about the build configuration
   - gradle --version
