@@ -9,8 +9,8 @@ env:
   global:
     - PIPENV_VENV_IN_PROJECT=1
     - PIPENV_IGNORE_VIRTUALENVS=1
-    - GATOR_ENDPOINT=https://0lc46btkaf.execute-api.us-east-2.amazonaws.com/DEV/cli-test-sh
-    - GATOR_API_KEY=DbQlWPecHD4vLIeIveytUaKLb7Jy8UXE9KAUuYnW
+    - GATOR_ENDPOINT=https://fn7nvqntqk.execute-api.us-east-2.amazonaws.com/DEV/cli-test-sh
+    - GATOR_API_KEY=V2srUQZLhYa9UvFKUptQ58HRnZ9icCRi3GlcNgF4
 
 # install the Markdown linting program called mdl
 before_install:
@@ -54,7 +54,7 @@ before_script:
 script:
   # lint the assignment's documentation: see .mdlrc for modifications
   - git config --global user.email
-  - echo $TRAVIS_REPO_SLUG
+  # - echo $TRAVIS_REPO_SLUG
   - mdl README.md
   # Java: see build.gradle for details about the build configuration
   - gradle --version
@@ -64,7 +64,7 @@ script:
   - gradle run
   # GatorGrader: see config/gatorgrader.yml for details about all checks;
   # not that grading skips the build task since submitted code may not build
-  - gradle report
+  # - gradle report
   - gradle --continue grade report
   # lint the technical writing, which is done in Travis CI to avoid possible
   # issues with line endings and Ruby programs on Windows computers

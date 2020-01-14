@@ -1,7 +1,7 @@
 ---
 name: java-assignment-solution-100-02
 break: true
-usernameenvvar: true
+idcmd: echo $TRAVIS_REPO_SLUG
 indent: 4
 reflection: writing/reflection.md
 ---
